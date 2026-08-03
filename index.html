@@ -56,6 +56,7 @@ nav {
   display: flex;
   align-items: flex-end;
   padding: 0 60px 72px;
+  background: var(--bg);
 }
 
 .hero-bg {
@@ -113,8 +114,8 @@ nav {
 }
 .tool-logo { display: flex; flex-direction: column; align-items: center; gap: 7px; opacity: 0.45; transition: opacity 0.2s, transform 0.2s; cursor: default; }
 .tool-logo:hover { opacity: 1; transform: translateY(-2px); }
-.tool-logo img { width: 26px; height: 26px; filter: grayscale(1) brightness(2); transition: filter 0.2s; }
-.tool-logo:hover img { filter: none; }
+.tool-logo img { width: 26px; height: 26px; filter: brightness(0) invert(1); opacity: 0.7; transition: filter 0.2s, opacity 0.2s; }
+.tool-logo:hover img { filter: none; opacity: 1; }
 .tool-logo span { font-size: 10px; color: var(--muted); text-transform: uppercase; letter-spacing: 1px; white-space: nowrap; }
 
 /* ── TAGLINE ── */
@@ -261,7 +262,7 @@ footer { text-align: center; padding: 24px; font-size: 12px; color: #444; }
   <div class="hero-content reveal">
     <div class="hero-left">
       <div class="hero-label">Social Media Manager · Freelance</div>
-      <div class="hero-name-big">Simon<br><em>Automne</em>-Pinto</div>
+      <div class="hero-name-big">Simon<br><em>Automne-Pinto</em></div>
     </div>
     <div class="hero-right">
       <p class="hero-bio">
@@ -282,23 +283,15 @@ footer { text-align: center; padding: 24px; font-size: 12px; color: #444; }
     <span>DaVinci</span>
   </div>
   <div class="tool-logo">
-    <img src="https://cdn.simpleicons.org/adobe/4285F4" alt="Adobe" onerror="this.style.opacity='0.3'">
-    <span>Adobe Suite</span>
-  </div>
-  <div class="tool-logo">
-    <img src="https://cdn.simpleicons.org/canva/4285F4" alt="Canva" onerror="this.style.opacity='0.3'">
-    <span>Canva</span>
-  </div>
-  <div class="tool-logo">
-    <img src="https://cdn.simpleicons.org/capcut/4285F4" alt="CapCut" onerror="this.style.opacity='0.3'">
-    <span>CapCut</span>
+    <img src="https://cdn.simpleicons.org/adobephotoshop/4285F4" alt="Photoshop" onerror="this.style.opacity='0.3'">
+    <span>Photoshop</span>
   </div>
   <div class="tool-logo">
     <img src="https://cdn.simpleicons.org/meta/4285F4" alt="Meta" onerror="this.style.opacity='0.3'">
     <span>Meta</span>
   </div>
   <div class="tool-logo">
-    <img src="https://cdn.simpleicons.org/linkedin/4285F4" alt="LinkedIn" onerror="this.style.opacity='0.3'">
+    <img src="https://cdn.simpleicons.org/linkedin" alt="LinkedIn" onerror="this.style.opacity='0.3'">
     <span>LinkedIn</span>
   </div>
   <div class="tool-logo">
